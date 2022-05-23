@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerVertical="true"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/demo_pic"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <LinearLayout
+            android:id="@+id/root"
+            android:padding="@dimen/_10sdp"
+            android:layout_toRightOf="@id/profile_image"
+            android:layout_width="match_parent"
+            android:gravity="start|center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/userName"
+                android:hint="This is my name"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/userAddress"
+                android:hint="This is adress"
+                android:textSize="@dimen/_13ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/userNumber"
+                android:hint="This is number"
+                android:textSize="@dimen/_13ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/_10sdp"
+            android:layout_toRightOf="@id/profile_image"
+            android:layout_below="@id/root"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/itemLatitude"
+               android:layout_weight="1"
+                android:hint="This is number"
+                android:textSize="@dimen/_13ssp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/itemLongitude"
+                android:layout_weight="1"
+                android:hint="This is number"
+                android:textSize="@dimen/_13ssp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
