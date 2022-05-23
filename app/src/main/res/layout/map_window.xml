@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_150sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#CDC1C1"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_height="@dimen/_60sdp">
+<LinearLayout
+    android:padding="@dimen/_5sdp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/name"
+        android:textSize="@dimen/_14ssp"
+        android:hint="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/address"
+        android:textSize="@dimen/_14ssp"
+        android:hint="Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</com.google.android.material.card.MaterialCardView>

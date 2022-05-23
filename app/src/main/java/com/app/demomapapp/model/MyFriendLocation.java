@@ -26,12 +26,12 @@ public class MyFriendLocation implements ClusterItem {
     @Nullable
     @Override
     public String getTitle() {
-        return null;
+        return title;
     }
 
     @Nullable
     @Override
     public String getSnippet() {
-        return null;
+        return snippet;
     }
 }

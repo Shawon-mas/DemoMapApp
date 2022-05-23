@@ -11,12 +11,10 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.room.Room;
 
 import android.provider.Settings;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,10 +27,7 @@ import com.app.demomapapp.model.MyDatabase;
 import com.app.demomapapp.model.MyFriendLocation;
 import com.app.demomapapp.model.User;
 import com.app.demomapapp.model.UserDao;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -41,7 +36,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.maps.android.clustering.Cluster;
 import com.google.maps.android.clustering.ClusterManager;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
@@ -50,7 +44,6 @@ import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -140,10 +133,10 @@ public class MapFragment extends Fragment  {
                     MarkerOptions markerOptions=new MarkerOptions().position(latLng).title("Your Current Location");
                     googleMap.addMarker(markerOptions);
                     googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,15));
-
                     friendLocationClusterManager=new ClusterManager<MyFriendLocation>(getActivity(),googleMap);
                     googleMap.setOnCameraIdleListener(friendLocationClusterManager);
                     googleMap.setOnMarkerClickListener(friendLocationClusterManager);
+
 
                     addItems();
                 }
