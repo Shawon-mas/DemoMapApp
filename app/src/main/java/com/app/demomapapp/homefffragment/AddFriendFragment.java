@@ -67,38 +67,6 @@ private FragmentAddFriendBinding binding;
             }
         });
     }
-/*class myclass extends Thread{
-    @Override
-    public void run() {
-        super.run();
-        MyDatabase myDatabase= Room.databaseBuilder(getContext(),MyDatabase.class,"friend_list").build();
 
-        UserDao userDao=myDatabase.userDao();
-        Boolean check=userDao.is_exist(Integer.parseInt(binding.editTextNumber.getText().toString()));
-        if (check==false)
-        {
-            userDao.insertrecord(new User(Integer.parseInt(binding.editTextNumber.getText().toString()),binding.editTextName.getText().toString(),binding.editTextEmail.getText().toString(),binding.editTextAddress.getText().toString()));
-            binding.editTextName.setText("");
-            binding.editTextEmail.setText("");
-            binding.editTextAddress.setText("");
-            binding.editTextNumber.setText("");
-
-            binding.status.setText("Friend Added Your List");
-
-        }else {
-            binding.editTextName.setText("");
-            binding.editTextEmail.setText("");
-            binding.editTextAddress.setText("");
-            binding.editTextNumber.setText("");
-            binding.status.setText("Friend Already Exists");
-
-        }
-
-    }
-}*/
 
 }
-/*
- binding=FragmentAddFriendBinding
- binding.editTextName.getText().toString(),binding.editTextEmail.getText().toString(),binding.editTextAddress.getText().toString()
- */

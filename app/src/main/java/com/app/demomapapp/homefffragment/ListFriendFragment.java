@@ -23,8 +23,7 @@ import java.util.List;
 
 public class ListFriendFragment extends Fragment {
     private FragmentListFriendBinding binding;
-   // private FriendAdaptar adaptar;
-    //private ArrayList<User> users;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

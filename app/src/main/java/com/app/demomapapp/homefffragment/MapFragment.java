@@ -41,6 +41,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.maps.android.clustering.Cluster;
 import com.google.maps.android.clustering.ClusterManager;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
@@ -71,12 +72,7 @@ public class MapFragment extends Fragment  {
         client=new FusedLocationProviderClient(getActivity());
         checkPermission();
 
-      /*  binding.bootm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getCurrenLoc();
-            }
-        });*/
+
 
         return binding.getRoot();
     }
@@ -143,11 +139,12 @@ public class MapFragment extends Fragment  {
                     LatLng latLng=new LatLng(latitude,longitude);
                     MarkerOptions markerOptions=new MarkerOptions().position(latLng).title("Your Current Location");
                     googleMap.addMarker(markerOptions);
-                    googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,12));
+                    googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,15));
 
                     friendLocationClusterManager=new ClusterManager<MyFriendLocation>(getActivity(),googleMap);
                     googleMap.setOnCameraIdleListener(friendLocationClusterManager);
                     googleMap.setOnMarkerClickListener(friendLocationClusterManager);
+
                     addItems();
                 }
             });
