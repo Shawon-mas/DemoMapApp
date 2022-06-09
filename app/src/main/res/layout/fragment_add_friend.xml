@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".homefffragment.AddFriendFragment">
+    tools:context=".homefragment.AddFriendFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.core.widget.NestedScrollView
@@ -130,7 +130,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginTop="@dimen/_40sdp"
-                android:backgroundTint="@color/material_on_background_emphasis_medium"
+                android:backgroundTint="#ffe6e6"
+                android:textColor="#000"
                 android:fontFamily="@font/roboto"
                 android:text="Add Friend"
                 android:textSize="@dimen/_13ssp"

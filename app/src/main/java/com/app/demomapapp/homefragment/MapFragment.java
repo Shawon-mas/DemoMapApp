@@ -1,4 +1,4 @@
-package com.app.demomapapp.homefffragment;
+package com.app.demomapapp.homefragment;
 
 import android.Manifest;
 import android.annotation.SuppressLint;

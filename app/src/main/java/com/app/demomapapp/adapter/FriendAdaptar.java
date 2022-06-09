@@ -43,7 +43,7 @@ public class FriendAdaptar extends RecyclerView.Adapter<FriendAdaptar.MyViewHOld
         holder.textView_address.setText(user.getUserAddress());
         holder.textView_phoneNumber.setText(String.valueOf("0"+user.getUid()));
         holder.textView_latitude.setText(String.valueOf("Lat:"+user.getUserLatitude()));
-        holder.textView_longitude.setText(String.valueOf("Lat:"+user.getUserLongitude()));
+        holder.textView_longitude.setText(String.valueOf("Lon:"+user.getUserLongitude()));
 
 
     }

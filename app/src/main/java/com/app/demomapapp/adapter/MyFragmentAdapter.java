@@ -6,9 +6,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.app.demomapapp.homefffragment.AddFriendFragment;
-import com.app.demomapapp.homefffragment.ListFriendFragment;
-import com.app.demomapapp.homefffragment.MapFragment;
+import com.app.demomapapp.homefragment.AddFriendFragment;
+import com.app.demomapapp.homefragment.ListFriendFragment;
+import com.app.demomapapp.homefragment.MapFragment;
 
 public class MyFragmentAdapter extends FragmentStateAdapter {
     public MyFragmentAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {

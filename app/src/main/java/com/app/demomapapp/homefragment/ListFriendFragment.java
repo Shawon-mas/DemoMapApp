@@ -1,4 +1,4 @@
-package com.app.demomapapp.homefffragment;
+package com.app.demomapapp.homefragment;
 
 import android.os.Bundle;
 
@@ -10,15 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.app.demomapapp.R;
 import com.app.demomapapp.adapter.FriendAdaptar;
-import com.app.demomapapp.databinding.FragmentAddFriendBinding;
 import com.app.demomapapp.databinding.FragmentListFriendBinding;
 import com.app.demomapapp.model.MyDatabase;
 import com.app.demomapapp.model.User;
 import com.app.demomapapp.model.UserDao;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ListFriendFragment extends Fragment {

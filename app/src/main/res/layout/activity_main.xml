@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".MainActivity">
+    tools:context=".HomeActivity">
     <com.google.android.material.tabs.TabLayout
         android:layout_marginLeft="@dimen/_5sdp"
         android:layout_marginRight="@dimen/_5sdp"
@@ -19,7 +19,7 @@
         app:tabTextColor="#686363"
         app:tabIndicatorGravity="stretch"
         app:tabSelectedTextColor="@color/black"
-        app:tabIndicatorColor="#F4B4B4"
+        app:tabIndicatorColor="#ffe6e6"
         app:tabIndicatorAnimationMode="elastic"
         app:tabIndicator="@drawable/tab_indicator"/>
     <androidx.viewpager2.widget.ViewPager2
